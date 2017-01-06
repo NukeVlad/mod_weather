@@ -2,7 +2,7 @@
 <extension type="module" version="3.1.0" client="site" method="upgrade">
     <name>Simple weather module</name>
     <author>Yoel Benítez Fonseca</author>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>A simple not automatic weather module</description>
     <files>
         <filename>mod_weather.xml</filename>
@@ -14,6 +14,10 @@
         <filename>README.md</filename>
         <filename>LICENSE</filename>
     </files>
+    <media folder="media" destination="mod_weather">
+      <folder>css</folder>
+      <folder>js</folder>
+    </media>
 
     <config>
       <fields name="params">

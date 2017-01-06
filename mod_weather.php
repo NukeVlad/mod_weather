@@ -22,6 +22,15 @@ defined('_JEXEC') or die;
 // Include the syndicate functions only once
 require_once dirname(__FILE__) . '/helper.php';
 
+// get Joomla! API
+// ===========================================================================
+$app     = JFactory::getApplication() ;
+$user    = JFactory::getUser() ;
+$date    = JFactory::getDate( 'now' , JFactory::getConfig()->get('offset') ) ;
+$uri     = JFactory::getURI() ;
+$doc     = JFactory::getDocument();
+$doc->addStyleSheet('media/mod_weather/css/weather-icons.min.css');
+
 $data               = modWeatherHelper::getData($params) ;
 $moduleclass_sfx    = htmlspecialchars($params->get('moduleclass_sfx'));
 
