@@ -16,7 +16,7 @@
     </files>
     <media folder="media" destination="mod_weather">
       <folder>css</folder>
-      <folder>js</folder>
+      <folder>font</folder>
     </media>
 
     <config>
