@@ -31,7 +31,7 @@ $uri     = JFactory::getURI() ;
 $doc     = JFactory::getDocument();
 $doc->addStyleSheet('media/mod_weather/css/weather-icons.min.css');
 
-$data               = modWeatherHelper::getData($params) ;
+$data               = modWeatherHelper::getData($params);
 $moduleclass_sfx    = htmlspecialchars($params->get('moduleclass_sfx'));
 
 require JModuleHelper::getLayoutPath('mod_weather', $params->get('layout', 'default'));

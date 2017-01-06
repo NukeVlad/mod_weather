@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 <div class="weather-module-wrap<?php echo $moduleclass_sfx; ?>">
     <div class="weather-module-wrap-inner">
 
-        My weather module
+        <i class="wi wi-night-sleet"></i> My weather module
 
     </div>
 </div>
