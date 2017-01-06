@@ -21,6 +21,47 @@
 
     <config>
       <fields name="params">
+          <fieldset name="weather">
+            <field name="prodate"
+                   type="calendar"
+                   default="5-10-2008"
+                   label="Select a date"
+                   description="" format="%d-%m-%Y"
+            />
+            <field name="temperature"
+              type="integer"
+              default="25"
+              label="Temperature"
+              description=""
+              first="1" last="50" step="1"
+            />
+            <field name="daystatedesp"
+              type="text"
+              default=""
+              label="Status"
+              description="" size="10" />
+            <field name="daystate" type="list" default="sunny" label="Select an option" description="">
+              <option value="sunny">Sunny</option>
+              <option value="cloudy">Cloudy</option>
+              <option value="cloudy-gusts">Cloudy with gusts</option>
+              <option value="cloudy-windy">Cloudy and windy</option>
+              <option value="fog">Fog</option>
+              <option value="hail">Hail</option>
+              <option value="thunderstorm">Thunderstorm</option>
+              <option value="rain">Rain</option>
+              <option value="rain-mix">Rain mix</option>
+              <option value="rain-wind">Rain and wind</option>
+            </field>
+            <field name="city"
+              type="text"
+              default="Camagüey"
+              label="City name"
+              description="" size="10" />
+              <field name="forecast"
+                type="editor"
+                label="Forecast"
+                description="" width="300" filter="safehtml" />
+          </fieldset>
           <fieldset name="advanced">
               <field
                   name="layout"

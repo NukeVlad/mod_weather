@@ -33,6 +33,12 @@ $doc->addStyleSheet('media/mod_weather/css/weather-icons.min.css');
 
 $data               = modWeatherHelper::getData($params);
 $moduleclass_sfx    = htmlspecialchars($params->get('moduleclass_sfx'));
+$prodate = htmlspecialchars($params->get('prodate'));
+$temperature = htmlspecialchars($params->get('temperature'));
+$daystatedesp = htmlspecialchars($params->get('daystatedesp'));
+$daystate = htmlspecialchars($params->get('daystate'));
+$city = htmlspecialchars($params->get('city'));
+$forecast = $params->get('forecast');
 
 require JModuleHelper::getLayoutPath('mod_weather', $params->get('layout', 'default'));
 ?>

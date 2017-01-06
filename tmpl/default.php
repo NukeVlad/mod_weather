@@ -22,9 +22,35 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="weather-module-wrap<?php echo $moduleclass_sfx; ?>">
-    <div class="weather-module-wrap-inner">
+    <div class="weather-module-wrap-inner well" style="font-size: 130%">
+      <a href="#myModal" data-toggle="modal">
+      <div class="row-fluid">
+        <div class="span12">
+          <p class="text-center">
+            <i class="wi wi-day-<?php echo $daystate; ?>"></i> <?php echo $daystatedesp; ?>
+            <i class="wi wi-thermometer"></i> <?php echo $temperature; ?> <i class="wi wi-celsius"></i>
+          </p>
+        </div>
+      </div>
 
-        <i class="wi wi-night-sleet"></i> My weather module
+      <div class="row-fluid">
+        <div class="span12">
+          <p class="text-center muted" style="font-size: 80%">
+            <?php echo $city; ?>
+          </p>
+        </div>
+      </div>
 
+      </a>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel"><?php echo $city; ?> - <?php echo $prodate; ?></h3>
+      </div>
+      <div class="modal-body">
+        <?php echo $forecast; ?>
+      </div>
     </div>
 </div>
