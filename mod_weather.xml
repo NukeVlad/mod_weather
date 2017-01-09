@@ -57,12 +57,12 @@
             <field name="city"
               type="text"
               default="Camagüey"
-              label="City name"
+              label="MOD_WEATHER_FCITY_LABEL"
               description="" size="10" />
-              <field name="forecast"
-                type="editor"
-                label="Forecast"
-                description="" width="300" filter="safehtml" />
+            <field name="forecast"
+              type="editor"
+              label="MOD_WEATHER_FFORECAST_LABEL"
+              description="" width="300" filter="safehtml" />
           </fieldset>
           <fieldset name="advanced">
               <field
