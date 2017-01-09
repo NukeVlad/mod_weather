@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1.0" client="site" method="upgrade">
-    <name>Simple weather module</name>
+    <name>MOD_WEATHER</name>
     <author>Yoel Benítez Fonseca</author>
     <version>1.0.1</version>
-    <description>A simple not automatic weather module</description>
+    <license>GNU General Public License version 3 or later; see LICENSE</license>
+    <description>MOD_WEATHER_INSTALL_DESC</description>
     <files>
         <filename>mod_weather.xml</filename>
         <filename module="mod_weather">mod_weather.php</filename>
@@ -13,6 +14,7 @@
         <filename>tmpl/index.html</filename>
         <filename>README.md</filename>
         <filename>LICENSE</filename>
+        <folder>language</folder>
     </files>
     <media folder="media" destination="mod_weather">
       <folder>css</folder>
@@ -25,32 +27,32 @@
             <field name="prodate"
                    type="calendar"
                    default="5-10-2008"
-                   label="Select a date"
-                   description="" format="%d-%m-%Y"
+                   label="MOD_WEATHER_FPRODATE_LABEL"
+                   description="MOD_WEATHER_FPRODATE_DESC" format="%d-%m-%Y"
             />
             <field name="temperature"
               type="integer"
               default="25"
-              label="Temperature"
+              label="MOD_WEATHER_FTEMP_LABEL"
               description=""
               first="1" last="50" step="1"
             />
             <field name="daystatedesp"
               type="text"
               default=""
-              label="Status"
+              label="MOD_WEATHER_FDAYSTATEDESP_LABEL"
               description="" size="10" />
-            <field name="daystate" type="list" default="sunny" label="Select an option" description="">
-              <option value="sunny">Sunny</option>
-              <option value="cloudy">Cloudy</option>
-              <option value="cloudy-gusts">Cloudy with gusts</option>
-              <option value="cloudy-windy">Cloudy and windy</option>
-              <option value="fog">Fog</option>
-              <option value="hail">Hail</option>
-              <option value="thunderstorm">Thunderstorm</option>
-              <option value="rain">Rain</option>
-              <option value="rain-mix">Rain mix</option>
-              <option value="rain-wind">Rain and wind</option>
+            <field name="daystate" type="list" default="sunny" label="MOD_WEATHER_DAYSTATE_LABEL" description="">
+              <option value="sunny">MOD_WEATHER_DSOP_SUNNY</option>
+              <option value="cloudy">MOD_WEATHER_DSOP_CLOUDY</option>
+              <option value="cloudy-gusts">MOD_WEATHER_DSOP_CLOUDY_GUSTS</option>
+              <option value="cloudy-windy">MOD_WEATHER_DSOP_CLOUDY_WINDY</option>
+              <option value="fog">MOD_WEATHER_DSOP_FOG</option>
+              <option value="hail">MOD_WEATHER_DSOP_HAIL</option>
+              <option value="thunderstorm">MOD_WEATHER_DSOP_THUNDERSTORM</option>
+              <option value="rain">MOD_WEATHER_DSOP_RAIN</option>
+              <option value="rain-mix">MOD_WEATHER_DSOP_RAIN_MIX</option>
+              <option value="rain-wind">MOD_WEATHER_DSOP_RAIN_WIND</option>
             </field>
             <field name="city"
               type="text"
